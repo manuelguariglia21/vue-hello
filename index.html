@@ -13,9 +13,16 @@
   <title>VIEW HELLO</title>
 </head>
 <body>
-  <div id="app" class="d-flex flex-column justify-content-center align-items-center vh-100 vw-100 bg-black">
+  <div id="app" :class="color" class="d-flex flex-column justify-content-center align-items-center vh-100 vw-100 bg-black">
     <h1>Benvenuto {{ name }}</h1>
     <img :src="image" alt="">
+
+    <div class="mg-buttons d-flex justify-content-between">
+      <button @click="colorRed" class="btn-danger">Rosso</button>
+      <button @click="colorGreen" class="btn-success">Verde</button>
+      <button @click="colorBlue" class="btn-primary">Blu</button>
+    </div>
+    
   </div>
   <script src="js/script.js"></script>
 </body>

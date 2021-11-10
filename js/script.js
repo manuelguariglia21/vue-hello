@@ -2,6 +2,24 @@ var app = new Vue({
     el: '#app',
     data: {
       name: 'Manuel!',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTq41YW_RQReBCLYBRs4vBQSuo0tY1Us6Yw&usqp=CAU'
+      image: 'img/red.jpg',
+      color: 'red'
+    },
+
+    methods: {
+      colorRed() {
+         this.color = 'red';
+         this.image = 'img/red.jpg';
+      },
+      colorGreen() {
+         this.color = 'green';
+         this.image = 'img/green.jpg';
+      },
+      colorBlue() {
+         this.color = 'blue';
+         this.image = 'img/blue.jpg';
+      }
+      
     }
+    
   });

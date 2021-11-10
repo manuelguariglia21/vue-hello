@@ -1,4 +1,19 @@
 body{
   font-family: 'Cairo', sans-serif;
-  color: white;
+  color: red;
+}
+
+img{
+  width: 25%;
+  margin: 20px;
+}
+
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.blue{
+  color: blue;
 }
