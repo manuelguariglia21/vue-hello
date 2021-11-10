@@ -13,14 +13,20 @@
   <title>VIEW HELLO</title>
 </head>
 <body>
-  <div id="app" :class="color" class="d-flex flex-column justify-content-center align-items-center vh-100 vw-100 bg-black">
-    <h1>Benvenuto {{ name }}</h1>
+  <div id="app" class="d-flex flex-column justify-content-center align-items-center vh-100 vw-100 bg-black p-5">
+    <p >What's your name?</p>
+    <input v-model="name" type="text" class="form-control w-25" >
+    <h1 :class="color">Hello {{ name }}!</h1>
     <img :src="image" alt="">
 
+    <div class="select">
+      <p>Select a color, the world is yours!!!</p>
+    </div>
+
     <div class="mg-buttons d-flex justify-content-between">
-      <button @click="colorRed" class="btn-danger">Rosso</button>
-      <button @click="colorGreen" class="btn-success">Verde</button>
-      <button @click="colorBlue" class="btn-primary">Blu</button>
+      <button @click="colorRed" class="btn-danger mg-btn"></button>
+      <button @click="colorGreen" class="btn-success mg-btn"></button>
+      <button @click="colorBlue" class="btn-primary mg-btn"></button>
     </div>
     
   </div>

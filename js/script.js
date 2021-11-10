@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-      name: 'Manuel!',
+      name: ' ',
       image: 'img/red.jpg',
       color: 'red'
     },
@@ -20,6 +20,6 @@ var app = new Vue({
          this.image = 'img/blue.jpg';
       }
       
-    }
+    },
     
   });

@@ -1,10 +1,17 @@
 body{
   font-family: 'Cairo', sans-serif;
-  color: red;
+  color: white;
 }
 
 img{
   width: 25%;
+  margin: 20px;
+}
+
+.mg-btn{
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
   margin: 20px;
 }
 
